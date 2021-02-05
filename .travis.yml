@@ -10,7 +10,7 @@ matrix:
     - python: 3.5
     - python: 3.6
   # Power job
-    - python: 3.4
+    - python: 3.4.8 # Use specific minor version same as amd64. Else it fails
       arch: ppc64le
   # These versions fail with  TypeError: Cannot create dshape 
   allow_failures:   
