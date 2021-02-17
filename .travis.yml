@@ -12,11 +12,12 @@ matrix:
   # Power job
     - python: 3.4.8 # Use specific minor version same as amd64. Else it fails
       arch: ppc64le
-  # These versions fail with  TypeError: Cannot create dshape 
-  allow_failures:   
     - python: 2.7
+      arch: ppc64le
     - python: 3.5
+      arch: ppc64le
     - python: 3.6
+      arch: ppc64le
 
 # command to install dependencies
 install:
