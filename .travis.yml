@@ -22,7 +22,7 @@ matrix:
 install:
   - pip install -U pip
   - pip install -r requirements.txt
-  - pip install pytest
+  - pip install pytest==3.8.2 #Use specific version below 4.0 since a function used is later depcreated.
   - pip install mock
 
 # command to run tests, e.g. python setup.py test
